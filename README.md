@@ -1,0 +1,3 @@
+## Original Project Overview
+
+The original project was a music recommender simulation built in Python. It used song data like genre, mood, and energy along with user preferences to calculate a score and suggest songs. The system followed a simple content-based approach, meaning it recommended songs based on how similar they were to what the user liked. The goal was to understand how recommendation systems transform user input and data into personalized results.
