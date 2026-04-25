@@ -1,0 +1,16 @@
+Evaluation Tests
+
+Test 1
+Input: chill music
+Expected Output: Chill / Study section
+Result: Passed
+
+Test 2
+Input: gym playlist
+Expected Output: Workout section
+Result: Passed
+
+Test 3
+Input: music
+Expected Output: Guardrail message asking for more specific input
+Result: Passed
