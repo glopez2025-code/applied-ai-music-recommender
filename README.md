@@ -12,6 +12,7 @@ This project was extended into an Applied AI System by adding a Retrieval-Augmen
 
 The system now:
 - Takes user input
+- Validates input using guardrails
 - Classifies it into a music category
 - Retrieves relevant information from a knowledge base file
 - Returns a structured recommendation with explanation
@@ -21,9 +22,10 @@ The system now:
 ## How It Works
 
 1. User enters a request (e.g., "chill music")
-2. The system identifies a category (Chill / Study, Workout, etc.)
-3. It searches a knowledge base file
-4. It returns the matching section with details
+2. The system validates the input
+3. The system identifies a category (Chill / Study, Workout, etc.)
+4. It searches a knowledge base file
+5. It returns the matching section with details
 
 ---
 
@@ -33,7 +35,7 @@ The system follows a simple flow:
 
 User Input → Input Validation → Category Detection → Knowledge Base Retrieval → Output Response
 
-The architecture diagram is included in the project to show how data moves through the system from the user’s request to the final recommendation.
+This shows how data moves through the system from the user’s request to the final recommendation.
 
 ---
 
@@ -90,7 +92,13 @@ Guardrail: Please describe the mood, activity, or type of music you want.
 
 ## Evaluation
 
-See evaluation.txt for test cases and results.
+The system was tested using multiple inputs to ensure consistent behavior:
+
+- Test 1: "chill music" → Correct category and knowledge retrieval
+- Test 2: "gym playlist" → Correct category and output
+- Test 3: "music" → Guardrail triggered correctly
+
+All tests passed, showing that the system responds consistently and handles both valid and invalid inputs.
 
 ---
 
@@ -102,3 +110,23 @@ See evaluation.txt for test cases and results.
 
 ```bash
 python main.py
+
+---
+
+## Reflection
+
+This project showed how AI systems can combine user input with external knowledge to generate useful results. It also demonstrated the importance of guardrails to improve reliability and user experience.
+
+During development, AI tools like Copilot were used to assist with writing functions and improving code structure. One helpful suggestion was generating a function to safely load files with exception handling. One limitation is that the system relies on simple keyword matching, which may not always fully understand complex user requests. Future improvements could include more advanced natural language processing or expanding the knowledge base.
+
+---
+
+## Portfolio Reflection
+
+This project reflects my ability to build a complete AI system from scratch, including input processing, retrieval from a knowledge base, and reliability through guardrails. It shows that I can take a basic concept and extend it into a structured, working system. I focused on keeping the design simple, understandable, and functional, which is important when building real-world AI tools.
+
+---
+
+## Video Walkthrough
+
+Loom Video: [PASTE YOUR LINK HERE]
