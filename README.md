@@ -27,6 +27,16 @@ The system now:
 
 ---
 
+## Architecture Overview
+
+The system follows a simple flow:
+
+User Input → Input Validation → Category Detection → Knowledge Base Retrieval → Output Response
+
+The architecture diagram is included in the project to show how data moves through the system from the user’s request to the final recommendation.
+
+---
+
 ## Guardrails
 
 The system includes input validation:
@@ -36,7 +46,9 @@ The system includes input validation:
 
 ---
 
-## Example Run
+## Sample Interactions
+
+### Example 1
 
 Input:
 chill music
@@ -48,6 +60,31 @@ Chill / Study
 - Usually has low energy and a calm mood
 - Often instrumental or soft vocals
 - Examples: Lo-fi, acoustic, ambient
+
+---
+
+### Example 2
+
+Input:
+gym playlist
+
+Output:
+Category: Workout
+
+Workout
+- High energy and fast tempo
+- Strong beats and motivating lyrics
+- Examples: Hip-hop, EDM, pop
+
+---
+
+### Example 3 (Guardrail)
+
+Input:
+music
+
+Output:
+Guardrail: Please describe the mood, activity, or type of music you want.
 
 ---
 
