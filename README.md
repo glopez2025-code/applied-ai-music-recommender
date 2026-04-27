@@ -129,4 +129,4 @@ This project reflects my ability to build a complete AI system from scratch, inc
 
 ## Video Walkthrough
 
-Loom Video: [PASTE YOUR LINK HERE]
+Loom Video: https://www.loom.com/share/e6bba60f5fb14332a239a770fc3c29f0
